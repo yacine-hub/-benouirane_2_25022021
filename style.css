@@ -14,26 +14,89 @@ header div img {
     width: 100px;
 }
 
-nav {
+nav ul{
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-a {
+nav>ul>li>a {
+
     border: 1px solid black;
-    margin-left: 15px;
-    padding : 15px;
+    padding: 15px;
 }
+
+li {
+    list-style: none;
+}
+
+ 
 
 h1 {font-family: cursive;
     font-size: 15px;
+    }
+
+
+h2 { font-family: cursive;
+}
+
+main {display: flex;
+}
+
+main div {
+    border: 1px solid black;
+    width: max-content;
+    border-radius: 10px ;
+   
+}
+
+main div { display: flex;
+        justify-content: flex-start;
+        padding: 3px;
+        margin: 10px;
+    }
+
+
+    
+section div img{border: 1px solid black;
+    max-width: 220px;
+    max-height: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+figcaption {
+    background-color:white;
+    color:black;
+    font: italic smaller sans-serif;
+    padding: 2px;
+    text-align:left;
+    border-radius: 10px;
+}
+
+section {
+    display: flex;
+    justify-content:space-around ;
     
 }
-h2 { font-family: cursive;
+
+    
 
 
-}
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
