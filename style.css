@@ -1,73 +1,61 @@
 header {
     display: flex;
 }
-
 header div { border: 1px solid black;
 width:50%;
 }
-
 header nav { border: 1px solid black;
     width:50%;
     }
-
 header div img {
     width: 100px;
 }
-
 nav ul{
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-
 nav>ul>li>a {
-
     border: 1px solid black;
     padding: 15px;
 }
-
 li {
     list-style: none;
 }
-
-.part1 {display: flex;
+.themes {display: flex;
 }
-
-.part1 div {
+.themes div {
     border: 1px solid black;
     width: max-content;
-    border-radius: 10px ;
-   
+    border-radius: 10px ; 
 }
-
-.part1 div { display: flex;
+.themes div { display: flex;
         justify-content: flex-start;
         padding: 3px;
         margin: 10px;
     }
-
-.conteneur1{border: 1px solid black;
+    
+.sous-conteneur1{border: 1px solid black;
         border-radius: 10px 10px 10px 10px;
-        width:min-content;
         background-color:#F2F2F2 ;
+       margin-left: 2px;
     }
+
+.sous-conteneur1{margin-right: 15px;}
+    
 
 
 figure{
         margin-left: 15px;
         margin-right: 15px;
-
 }
-.conteneur1 img{border: 1px solid black;
-    width: 220px;
+.sous-conteneur1 img{border: 1px solid black;
+    width: 300px;
     height: 150px;
     border-radius: 10px 10px 0 0;
     margin-left:  2%;
 }
-
-
-figcaption {
+.conteneur1 figcaption {
     background-color:white;
     color:black;
     font: italic smaller sans-serif;
@@ -76,59 +64,70 @@ figcaption {
     border-radius: 10px;
     border: 1px solid black;
 }
-
-
-
-
-.conteneur1 .niveau1 {
+.conteneur-image {
     display: flex;
-    justify-content: flex-start;
     
 }
 
-
-.conteneur1 .niveau2{
-    display: flex;
-    justify-content: flex-start;
-}
-  
-
-.conteneur2 img{border: 1px solid black;
+.sous-conteneur2 img{border: 1px solid black;
     width: 200px;
     height: 130px;
     border-radius: 10px 10px 0 0;
     margin-left:  2%;
 }
-
-.conteneur2{border: 1px solid black;
+.sous-conteneur2{border: 1px solid black;
     border-radius: 10px 10px 10px 10px;
     width: min-content;
     background-color:#F2F2F2 ;
 }
-
-
-.part2{display: flex;
+.conteneur1 {display: flex;
 }
 
+.sous-conteneur2{display: flex;
+justify-content: flex-start;
+}
 
-.conteneur2{display: flex;
-justify-content: flex-start;}
+img{object-fit: cover;}
 
-
-
-
-
-
-
+.conteneur2 figcaption {
+    background-color:white;
+    color:black;
+    font: italic smaller sans-serif;
+    padding: 2px;
+    text-align: left;
+    width:118%;
     
+}
+
+.conteneur2 figure {
+    border-radius: 10px;
+    position : relative;
+    z-index  : 0;
+    }
+
+.conteneur2 img{border-radius: 10px;}
+ 
+
+.conteneur2 figcaption {
+    position : absolute;
+    z-index  : 1;
+    top      : 0;
+    right    : 1;
+     background-color: white;
+}
+   
 
 
 
 
+.conteneur2 {display: flex;
+    
+}
+    
+footer{display: flex;
+    justify-content: space-around;
+}
 
+footer{background-color:#F2F2F2}
 
-
-
-
-
-
+h2{border: 1px solid black;}

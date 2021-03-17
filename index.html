@@ -1,130 +1,148 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css" />
-        <title>reservia</title>  
-    </head>
-    <body>
-        <header>
-            <div>
-                <img src="images/reservia.png" alt="">
-            </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">hebergements</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><a href="#">S'inscrire</a></li>
-                    </ul>
+    <html>
+        <head>
+            <meta charset="utf-8"/>
+            <link rel="stylesheet" href="style.css" />
+            <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+            <title>reservia</title>  
+        </head>
+        <body>
+            <header>
+                <div>
+                    <img src="images/reservia.png" alt="">
+                </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">hebergements</a></li>
+                            <li><a href="#">Activités</a></li>
+                            <li><a href="#">S'inscrire</a></li>
+                        </ul>
                 
-                </nav>
-        
-        
-        </header> 
-            <p>Trouvez votre hébergement pour des vacance de reve</p>
-        
+                    </nav>
+            </header> 
+                <p>Trouvez votre hébergement pour des vacance de reve</p>
                 <p><input type="search">   
                 <button>rechercher</button></p>
-            <main class="part1">  
-                <div class="filtres">filtres</div>
-                <div class="economique">Economique</div>
-                <div class="familial">familial</div>
-                <div class="Romantique">Romantique</div>
-                <div class="Animaux">Animaux autorisé</div>
-                
-                            
-            </main>
-
-
-
-            <main class="part2">
-                <section class="conteneur1">
-                    <p>Hébergement à Marseille</p> 
-                
-                    <div class="niveau1">
-        
-            
-
-                        <figure class="bloc1"><img src="images/auberge.jpg" alt="photo auberge" />
-                            <figcaption> la Cannebière
-                            <br> à partir de 25€</figcaption></figure>
-
-
-
-                        <figure class="bloc2"><img src="images/hotel du port.jpg"alt="photo du port" />
-                        <figcaption> photo du port 
-                        <br> a partir de 25€</figcaption></figure>
-    
-
-
-    
-                        <figure class="bloc3"><img src="images/hotel les mouettes.jpg"alt="photos les mouettes" />
-                            <figcaption> les mouettes
-                            <br>Nuit a partir de 76€ </figcaption></figure>
-    
-                    </div>
-
-    
-
-
-
-                    <div class="niveau2">
+            <section class="themes">  
+                    <div class="filtres">filtres</div>
+                    <div class="economique">Economique </div>
+                    <div class="familial">familial</div>
+                    <div class="Romantique">Romantique</div>
+                    <div class="Animaux">Animaux autorisé</div>
                     
-                        <figure class="bloc4"><img src="images/hotel de la mer.jpg" alt="chambre "/>
-                        <figcaption>hotel de la mer 
-                        <br>Nuit a partir de 46€</figcaption></figure>
-
-    
-
-    
-
-                        <figure class="bloc5"><img src="images/auberge le panier.jpg" alt="Photo auberge le paniers" />
-                        <figcaption> le panier
-                        <br>Nuit a partir de 23€</figcaption></figure>
-   
-
-                        <figure class="bloc6"><img src="images/hotel chez amina.jpg" alt="photo amina">
-                        <figcaption> chez Amina
-                        <br>Nuit a partir de 96€</figcaption></figure>
-                 
-                    </div>
-
                 </section>
-        
-                    <section class="conteneur2">
-                         
-                 
+            <main>
+               <div class="conteneur1">
+                    <section class="sous-conteneur1">
+                        <h1>Hébergement à Marseille</h1> 
+                        <div class="conteneur-image">
+                           
+                           <div>
+                                <figure class="bloc1"><img src="images/auberge.jpg" alt="photo auberge" />
+                                    <figcaption> la Cannebière
+                                    <br> à partir de 25€</figcaption></figure>
+                                <figure class="bloc2"><img src="images/hotel du port.jpg"alt="photo du port" />
+                                    <figcaption> photo du port 
+                                    <br> a partir de 25€</figcaption></figure>
+                            </div>
+                            
+                            <div>
+                                <figure class="bloc3"><img src="images/hotel les mouettes.jpg"alt="photos les mouettes" />
+                                    <figcaption> les mouettes
+                                    <br>Nuit a partir de 76€ </figcaption></figure>
+                                <figure class="bloc4"><img src="images/hotel de la mer.jpg" alt="chambre "/>
+                                    <figcaption>hotel de la mer 
+                                    <br>Nuit a partir de 46€</figcaption></figure>
+                            </div>
+                            
+                             <div>  
+                                <figure class="bloc5"><img src="images/auberge le panier.jpg" alt="Photo auberge le paniers" />
+                                    <figcaption> le panier
+                                    <br>Nuit a partir de 23€</figcaption></figure>
+                                <figure class="bloc6"><img src="images/hotel chez amina.jpg" alt="photo amina">
+                                    <figcaption> chez Amina
+                                    <br>Nuit a partir de 96€</figcaption></figure>
+                             </div> 
+                             
+                        </div>
+                        <p>Afficher plus</p>
+                    </section>
+                   
+                    
+                   
+                    
+                    <section class="sous-conteneur2">
+                        
                         <div class="niveau1">
-         
-             
- 
-                            <figure class="bloc1"><img src="images/hotel le soleil.jpg" alt="chambre verte" />
+                            <h2>Les plus populaires</h2>
+                        <figure class="bloc1"><img src="images/hotel le soleil.jpg" alt="chambre verte" />
                             <figcaption> <p>Hotel Le soleil du matin
                             Nuit a partir de 128€</p> </figcaption></figure>
- 
- 
- 
-                            <figure class="bloc2"><img src="images/coeur de l'eau.jpg"alt="Chambre beige" />
+                        <figure class="bloc2"><img src="images/coeur de l'eau.jpg"alt="Chambre beige" />
                             <figcaption> <p> Au coeur de l'eau 
                             Chambre d'hotes
                             a partir de 71€ </p></figcaption></figure>
-     
- 
- 
-     
-                            <figure class="bloc3"><img src="images/tout bleu et blanc.jpg"alt="chambre blanche" />
+                        <figure class="bloc3"><img src="images/tout bleu et blanc.jpg"alt="chambre blanche" />
                             <figcaption> <p>Hotel Tout bleu et blanc</p>
                             Nuit a partir de 68€ </figcaption></figure>
-     
-                         </div>
 
                     </section>
+                        
+                </div>
+                
+            
+            <div class="conteneur2">
+                <h3>Activité a marselle</h3>
+                   <div>
+                        
+                        <figure class="vignette port"><img src="images/vieux port (1).jpg" width="350" height="538"  alt="bateaux"/>
+                            <figcaption> <p>Vieux Port</p></figcaption></figure>
+                        
+                    </div>
+                    <div>
+                        <figure class="vignette Pomègues"><img src="images/Fort de Pomègues.jpg" width="350" height="250" alt="chateaux"/>
+                            <figcaption><p> Fort de Pomègues</p></figcaption></figure>
+                        <figure class="vignette frioul"><img src="images/ile du frioul.jpg" width="350" height="250"alt="longue vue" />
+                            <figcaption><p> Île du Frioul</p></figcaption></figure>
+                    </div>
+                    <div>
+                        <figure class="vignette Calanques"><img src="images/Parc National des Calanques.jpg"width="350" height="538" alt="littoral"/>
+                            <figcaption><p>Parc National des Calanques</p></figcaption></figure>
+                    </div>
+                    <div>
+                        <figure class="vignette Dame"><img src="images/Notre-Dame-de-la-Garde.jpg"width="350" height="250" alt="Eglise" />
+                            <figcaption><p>Notre-Dame-de-la-garde</p></figcaption></figure>
+                        <figure class="vignette Longchamp"><img src="images/Parc Longchamp.jpg" width="350" height="250"alt="Parc"/>
+                            <figcaption><p>Parc Longchamp</p></figcaption></figure>
+                    </div>
+                
+            </div>  
+            
+                        
              </main>
 
 
     
     <footer>
-
+        <div>
+            <h4>A propos</h4>
+            <p>Fonctionnement du site</p>
+            <p>Conditions générales de vente</p>
+            <p>Données et confidentialité</p>
+        </div>
+    
+        <div>
+            <h5>Nos hébergements</h5>
+            <p>Charte qualité</p>
+            <p>Soumettre votre hôtel</p>
+        </div>
+    
+        <div>
+            <h6>Assistance</h6>
+            <p>Centre d'aide</p>
+            <p>Nous contacter</p>
+        </div>
+    
 
     </footer>
     
