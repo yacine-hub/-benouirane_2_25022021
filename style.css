@@ -1,10 +1,10 @@
 header {
     display: flex;
 }
-header div { border: 1px solid black;
+header div {
 width:50%;
 }
-header nav { border: 1px solid black;
+header nav { 
     width:50%;
     }
 header div img {
@@ -16,7 +16,7 @@ nav ul{
     align-items: center;
 }
 nav>ul>li>a {
-    border: 1px solid black;
+    
     padding: 15px;
 }
 li {
@@ -35,7 +35,7 @@ li {
         margin: 10px;
     }
     
-.sous-conteneur1{border: 1px solid black;
+.sous-conteneur1{
         border-radius: 10px 10px 10px 10px;
         background-color:#F2F2F2 ;
        margin-left: 2px;
@@ -75,7 +75,7 @@ figure{
     border-radius: 10px 10px 0 0;
     margin-left:  2%;
 }
-.sous-conteneur2{border: 1px solid black;
+.sous-conteneur2{
     border-radius: 10px 10px 10px 10px;
     width: min-content;
     background-color:#F2F2F2 ;
@@ -130,4 +130,3 @@ footer{display: flex;
 
 footer{background-color:#F2F2F2}
 
-h2{border: 1px solid black;}
