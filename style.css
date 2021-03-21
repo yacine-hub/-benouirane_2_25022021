@@ -22,23 +22,58 @@ nav>ul>li>a {
 li {
     list-style: none;
 }
-.themes {display: flex;
+.recherche div{display: flex;
+
 }
-.themes div {
-    border: 1px solid black;
-    width: max-content;
-    border-radius: 10px ; 
+ 
+.info {
+    border-radius: 5px 0em 0em 5px;
+    background-color:#F2F2F2 ;
 }
-.themes div { display: flex;
-        justify-content: flex-start;
-        padding: 3px;
-        margin: 10px;
+div .info i{margin: 10px 10px 10px 10px;}
+
+input{border: 1px  solid#F2F2F2;}
+
+button{background-color:#0065FC ;
+    border-radius: 0em 5px 5px 0em;
+    border: none;
     }
-    
+button p{color: white;}
+.filtres .themes{border: 3px solid #F2F2F2 ;
+    border-left-style: none;
+    border-radius: 0em 5em 5em 0em;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 15px 5px 15px;
+    margin-left: -5px;
+    z-index: 1;
+    position:relative;
+}
+ 
+.filtres{display: flex;
+    align-items: center;
+}
+        
+
+#moncercle { font-size: 1.5em; width: 1.5em; text-align: center; line-height: 1.5em; background:#DEEBFF ; color:#0065FC; border-radius: 2em;  
+
+   margin-left: 20px;
+
+}
+
+
+i{font-size: small;
+margin: 5px 2px 15px 2px;
+} 
+
+.filtres p{margin-left: 5px;
+}
+.conteneur-image{
+    flex-wrap: wrap;
+}    
 .sous-conteneur1{
-        border-radius: 10px 10px 10px 10px;
-        background-color:#F2F2F2 ;
-       margin-left: 2px;
+    border-radius: 10px 10px 10px 10px;
+    background-color:#F2F2F2 ;
+    margin-left: 2px;
     }
 
 .sous-conteneur1{margin-right: 15px;}
@@ -50,19 +85,29 @@ figure{
         margin-right: 15px;
 }
 .sous-conteneur1 img{border: 1px solid black;
-    width: 300px;
+    width: 280px;
     height: 150px;
     border-radius: 10px 10px 0 0;
     margin-left:  2%;
 }
-.conteneur1 figcaption {
+.conteneur1 .sous-conteneur1 figcaption {
     background-color:white;
     color:black;
     font: italic smaller sans-serif;
-    padding: 2px;
+    padding: 1px;
     text-align:left;
     border-radius: 10px;
     border: 1px solid black;
+}
+.conteneur1 .sous-conteneur2 figcaption{
+background-color:white;
+color:black;
+font: italic smaller sans-serif;
+padding: 2px;
+text-align:left;
+border-radius: 10px;
+border: 1px solid black;
+width: 200px;
 }
 .conteneur-image {
     display: flex;
@@ -83,13 +128,16 @@ figure{
 .conteneur1 {display: flex;
 }
 
+
+
+
 .sous-conteneur2{display: flex;
 justify-content: flex-start;
 }
 
 img{object-fit: cover;}
 
-.conteneur2 figcaption {
+.Activité figcaption {
     background-color:white;
     color:black;
     font: italic smaller sans-serif;
@@ -99,28 +147,22 @@ img{object-fit: cover;}
     
 }
 
-.conteneur2 figure {
+.Activité figure {
     border-radius: 10px;
     position : relative;
-    z-index  : 0;
+    z-index  : 1;
     }
 
-.conteneur2 img{border-radius: 10px;}
+.Activité img{border-radius: 10px 10px 0px 0px;}
  
 
-.conteneur2 figcaption {
-    position : absolute;
+.Activité figcaption {
     z-index  : 1;
-    top      : 0;
-    right    : 1;
      background-color: white;
 }
-   
 
 
-
-
-.conteneur2 {display: flex;
+.Activité .image-activité {display: flex;
     
 }
     
@@ -129,4 +171,34 @@ footer{display: flex;
 }
 
 footer{background-color:#F2F2F2}
+
+.vignette-populaire{display: flex;}
+
+
+.vignette-port img{width: 300px;
+    height: 550px;
+
+}
+
+.vignette-Calanques img{width: 300px;
+    height: 550px;
+
+}
+
+.vignette-Pomègues img{width: 350px;
+    height: 250px;}
+
+.vignette-frioul img{width: 350px;
+    height: 250px;}
+
+.vignette-Dame img{width: 350px;
+    height: 250px;}
+
+.vignette-Longchamp img{width: 350px;
+    height: 250px;}
+
+.image-activité figcaption{width: 98%;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 255, .2);
+    border-radius: 0px 0px 10px 10px;
+}
 
