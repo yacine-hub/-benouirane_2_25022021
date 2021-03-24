@@ -22,6 +22,20 @@ nav>ul>li>a {
 li {
     list-style: none;
 }
+
+a:link {text-decoration:none;color: black;
+    
+}
+.logements a:hover {
+    color:#0065FC;
+    text-decoration: overline;
+}
+.loisirs a:hover {
+    color:#0065FC;
+    text-decoration: overline;
+}
+
+
 .recherche div{display: flex;
 
 }
@@ -37,9 +51,13 @@ input{border: 1px  solid#F2F2F2;}
 button{background-color:#0065FC ;
     border-radius: 0em 5px 5px 0em;
     border: none;
+    width: 11%;
     }
-button p{color: white;}
-.filtres .themes{border: 3px solid #F2F2F2 ;
+button p{color: white;
+}
+
+
+.filtres .themes{border: 3px solid #f2f2f2e7 ;
     border-left-style: none;
     border-radius: 0em 5em 5em 0em;
     margin: 5px 5px 5px 5px;
@@ -69,26 +87,47 @@ margin: 5px 2px 15px 2px;
 }
 .conteneur-image{
     flex-wrap: wrap;
+    
 }    
+
+
 .sous-conteneur1{
     border-radius: 10px 10px 10px 10px;
     background-color:#F2F2F2 ;
     margin-left: 2px;
+   
     }
 
-.sous-conteneur1{margin-right: 15px;}
+.sous-conteneur1{margin-right: 15px;
+   padding-bottom: -85px;
+}
     
+.conteneur-image figcaption {
+    z-index  :1;
+     background-color: white;
+     position:relative;
+     top: -65px;
+     left: 6px;
+}
+
+.conteneur-image figure {
+    border-radius: 10px;
+    position : relative;
+    z-index  : 0;
+    }
+
 
 
 figure{
         margin-left: 15px;
         margin-right: 15px;
 }
-.sous-conteneur1 img{border: 1px solid black;
-    width: 280px;
-    height: 150px;
-    border-radius: 10px 10px 0 0;
+.sous-conteneur1 img{border: 4px solid white;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
     margin-left:  2%;
+    margin-bottom: 32px;
 }
 .conteneur1 .sous-conteneur1 figcaption {
     background-color:white;
@@ -96,8 +135,8 @@ figure{
     font: italic smaller sans-serif;
     padding: 1px;
     text-align:left;
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: 0px 0px 10px 10px;
+    
 }
 .conteneur1 .sous-conteneur2 figcaption{
 background-color:white;
@@ -105,16 +144,26 @@ color:black;
 font: italic smaller sans-serif;
 padding: 2px;
 text-align:left;
-border-radius: 10px;
-border: 1px solid black;
+border-radius: 0px 10px 10px 0px;
+border: none;
 width: 200px;
 }
+
 .conteneur-image {
     display: flex;
-    
+
 }
 
-.sous-conteneur2 img{border: 1px solid black;
+
+
+.bloc5{margin-top: -50px;
+}
+.bloc6{
+    margin-top: -50px;}
+    
+
+
+.sous-conteneur2 img{border: 4px solid white;
     width: 200px;
     height: 130px;
     border-radius: 10px 10px 0 0;
@@ -124,7 +173,25 @@ width: 200px;
     border-radius: 10px 10px 10px 10px;
     width: min-content;
     background-color:#F2F2F2 ;
+    margin-bottom: auto;
 }
+
+
+.sous-conteneur2 figcaption {
+    z-index  :1;
+     background-color: white;
+     position:relative;
+     right: 40px;
+     
+}
+
+.sous-conteneur2 figure {
+    border-radius: 10px;
+    position : relative;
+    z-index  : 0;
+    }
+
+
 .conteneur1 {display: flex;
 }
 
@@ -141,60 +208,66 @@ img{object-fit: cover;}
     background-color:white;
     color:black;
     font: italic smaller sans-serif;
-    padding: 2px;
+    padding: 3px 3px;
     text-align: left;
-    width:118%;
+    width:145px;
     
 }
 
 .Activité figure {
     border-radius: 10px;
     position : relative;
-    z-index  : 1;
+    z-index  : 0;
+    
     }
 
-.Activité img{border-radius: 10px 10px 0px 0px;}
+.Activité img{border-radius: 10px;
+border: 1px white;}
  
 
 .Activité figcaption {
-    z-index  : 1;
+    z-index  :1;
      background-color: white;
+     position:relative;
+     top: -50px;
+    
+   
 }
+
 
 
 .Activité .image-activité {display: flex;
     
 }
     
-footer{display: flex;
-    justify-content: space-around;
-}
 
-footer{background-color:#F2F2F2}
 
 .vignette-populaire{display: flex;}
 
 
-.vignette-port img{width: 300px;
-    height: 550px;
+.vignette-port img{width: 315px;
+    height: 535px;
 
 }
 
-.vignette-Calanques img{width: 300px;
-    height: 550px;
+.vignette-Calanques img{width: 315px;
+    height: 535px;
 
 }
 
-.vignette-Pomègues img{width: 350px;
+.vignette-Pomègues img{width: 315px;
+    height: 250px;
+    
+}
+
+.vignette-frioul img{width: 315px;
+    height: 250px;
+ }
+
+.vignette-Dame img{width: 315px;
     height: 250px;}
 
-.vignette-frioul img{width: 350px;
-    height: 250px;}
-
-.vignette-Dame img{width: 350px;
-    height: 250px;}
-
-.vignette-Longchamp img{width: 350px;
+.vignette-Longchamp img{width: 315px;
     height: 250px;}
 
 .image-activité figcaption{width: 98%;
@@ -202,3 +275,19 @@ footer{background-color:#F2F2F2}
     border-radius: 0px 0px 10px 10px;
 }
 
+.vignette-Pomègues{
+  margin-bottom: -9%;  
+}
+
+.vignette-Dame{
+    margin-bottom: -9%; 
+
+}
+footer{display: flex;
+    justify-content:space-around;
+    
+}
+
+footer{background-color:#F2F2F2}
+
+footer p {margin-right: 330px ;}
