@@ -1,3 +1,24 @@
+@font-face{
+    font-family: raleway;
+    src: url(police/Raleway1.ttf) format("truetype");
+
+    
+}
+
+.logo{
+    margin-left: 25px;
+}
+
+   main{
+       margin-left: 20px;
+   }
+.texte{
+    margin-top:-20px}
+
+
+body{font-family: raleway;}
+
+
 header {
     display: flex;
 }
@@ -26,13 +47,31 @@ li {
 a:link {text-decoration:none;color: black;
     
 }
+
 .logements a:hover {
     color:#0065FC;
     text-decoration: overline;
-}
+    }
 .loisirs a:hover {
     color:#0065FC;
     text-decoration: overline;
+}
+
+.recherche{ margin-left:  25px;
+}
+
+
+
+.filtres{margin-top: 25px;
+margin-left: 25px;
+font-weight: bold;
+font-size:20px;
+}
+
+
+
+.information{
+    margin-left:25px
 }
 
 
@@ -54,6 +93,8 @@ button{background-color:#0065FC ;
     width: 11%;
     }
 button p{color: white;
+    font-weight: bold;
+    font-size: large;
 }
 
 
@@ -72,7 +113,7 @@ button p{color: white;
 }
         
 
-#moncercle { font-size: 1.5em; width: 1.5em; text-align: center; line-height: 1.5em; background:#DEEBFF ; color:#0065FC; border-radius: 2em;  
+#moncercle { font-size: 1.5em; width: 1.7em; text-align: center; line-height: 1.5em;height: 1.7em; background:#DEEBFF ; color:#0065FC; border-radius: 2em;  
 
    margin-left: 20px;
 
@@ -85,98 +126,132 @@ margin: 5px 2px 15px 2px;
 
 .filtres p{margin-left: 5px;
 }
+
+
+h1{
+    margin-left: 5px;
+}
+
+/*partie hebergement*/
+
+h2{margin-left: 30px;}
+
+
+
 .conteneur-image{
     flex-wrap: wrap;
-    
-}    
+    margin-top: -46px;
+ 
+}   
 
+.conteneur-image{display: flex;}
 
 .sous-conteneur1{
+    
     border-radius: 10px 10px 10px 10px;
     background-color:#F2F2F2 ;
-    margin-left: 2px;
-   
-    }
-
-.sous-conteneur1{margin-right: 15px;
-   padding-bottom: -85px;
+    margin-left: 5px;
+   margin-right: 25px;
+   padding-bottom: 25px;
 }
     
 .conteneur-image figcaption {
     z-index  :1;
      background-color: white;
      position:relative;
-     top: -65px;
-     left: 6px;
-}
-
-.conteneur-image figure {
-    border-radius: 10px;
-    position : relative;
-    z-index  : 0;
-    }
-
-
-
-figure{
-        margin-left: 15px;
-        margin-right: 15px;
-}
-.sous-conteneur1 img{border: 4px solid white;
-    width: 300px;
-    height: 180px;
-    border-radius: 10px;
-    margin-left:  2%;
-    margin-bottom: 32px;
-}
-.conteneur1 .sous-conteneur1 figcaption {
-    background-color:white;
+     top: -52px;
+     left: 14px;
+     margin-left: -1ex ;
+     margin-right: 3px;
+     background-color:white;
     color:black;
-    font: italic smaller sans-serif;
-    padding: 1px;
     text-align:left;
     border-radius: 0px 0px 10px 10px;
     
 }
-.conteneur1 .sous-conteneur2 figcaption{
-background-color:white;
-color:black;
-font: italic smaller sans-serif;
-padding: 2px;
-text-align:left;
-border-radius: 0px 10px 10px 0px;
-border: none;
-width: 200px;
+.conteneur-image figcaption p{margin-left: 15px;margin-top: -20px;}
+h3{
+    margin-left:15px ;
+    padding-top: 10px;
 }
+.conteneur-image figure { 
+    border-radius: 10px;
+    position : relative;
+    z-index  : 0;
+    margin-left: 28px;
+    margin-right: 15px;
+    margin-bottom: 55px;
+    margin-top: 50px;
+    width: 260px;
+    height: 130px;
+    padding-bottom: 5px;
+}
+
+ .conteneur-image figure figcaption p i{color: #0065FC;}
+
+.vignette-cannebiere{
+    margin-bottom: 50px;
+}
+.sous-conteneur1 img{border: 3px solid white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    margin-left:  2%;
+    margin-bottom: 30px;
+}
+
+  
+
+.afficher {margin-left: 25px;}
+
+}
+
 
 .conteneur-image {
     display: flex;
 
 }
+.afficher {  margin-top: 10px;
 
-
-
-.bloc5{margin-top: -50px;
 }
-.bloc6{
-    margin-top: -50px;}
-    
+.afficher p{ margin-top: 50px; 
+}
 
+/* partie populaire */
+
+
+.conteneur1 .sous-conteneur2 figcaption{
+    background-color:white;
+    color:black;
+    padding: 2px;
+    text-align:left;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    width: 90%;
+    margin-right: -50px;
+    margin-bottom: -7px;
+    }
 
 .sous-conteneur2 img{border: 4px solid white;
-    width: 200px;
-    height: 130px;
+    
+    width: 100%;
+    height: 100%;
     border-radius: 10px 10px 0 0;
-    margin-left:  2%;
+    margin-left:  -2%;
 }
 .sous-conteneur2{
     border-radius: 10px 10px 10px 10px;
-    width: min-content;
+    
     background-color:#F2F2F2 ;
-    margin-bottom: auto;
+    margin-bottom: 1px;
 }
 
-
+.conteneur-image2{
+    margin-top: 15px;
+}
+h4{
+    margin-bottom: 10px;
+}
 .sous-conteneur2 figcaption {
     z-index  :1;
      background-color: white;
@@ -189,7 +264,12 @@ width: 200px;
     border-radius: 10px;
     position : relative;
     z-index  : 0;
-    }
+    margin-bottom: 40px;
+    width: 350px;
+    height: 130px;
+
+}
+
 
 
 .conteneur1 {display: flex;
@@ -203,6 +283,12 @@ justify-content: flex-start;
 }
 
 img{object-fit: cover;}
+
+
+
+/*partie activité a marseille*/
+
+
 
 .Activité figcaption {
     background-color:white;
