@@ -1,26 +1,21 @@
 @font-face{
     font-family: raleway;
-    src: url(police/Raleway1.ttf) format("truetype");
-
-    
+    src: url(police/Raleway2.ttf) format("truetype");   
 }
-
 .logo{
-    margin-left: 25px;
+    margin-left: 45px;
 }
-
-   main{
+main{
        margin-left: 20px;
    }
 .texte{
-    margin-top:-20px}
-
-
-body{font-family: raleway;}
-
-
+    margin-top:-20px
+}
+body{font-family: raleway;
+}
 header {
     display: flex;
+    margin-top: 50px;
 }
 header div {
 width:50%;
@@ -35,35 +30,33 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 25px;
 }
 nav>ul>li>a {
     
-    padding: 15px;
+    padding: 20px;
 }
 li {
     list-style: none;
 }
-
-a:link {text-decoration:none;color: black;
-    
+a:link {text-decoration:none;color: black;  
 }
-
 .logements a:hover {
     color:#0065FC;
-    text-decoration: overline;
+    border-top: 2px solid #0065FC ;
+
     }
 .loisirs a:hover {
     color:#0065FC;
     text-decoration: overline;
 }
-
-.recherche{ margin-left:  25px;
+.recherche{ margin-left:  45px;
 }
 
 
 
 .filtres{margin-top: 25px;
-margin-left: 25px;
+margin-left: 45px;
 font-weight: bold;
 font-size:20px;
 }
@@ -73,26 +66,33 @@ font-size:20px;
 .information{
     display: flex;
     margin-left:25px;
-    margin-top:
+    align-items: center;
 }
 
 
 .recherche div{display: flex;
+height: 50px;
 
 }
  
 .info {
-    border-radius: 5px 0em 0em 5px;
+    border-radius: 15px 0em 0em 15px;
     background-color:#F2F2F2 ;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 div .info i{margin: 10px 10px 10px 10px;}
 
-input{border: 1px  solid#F2F2F2;}
+input{border: 1px  solid#F2F2F2;
+    height: 50px;
+}
 
 button{background-color:#0065FC ;
     border-radius: 0em 5px 5px 0em;
     border: none;
-    width: 11%;
+    width: 135px;
+
     }
 button p{color: white;
     font-weight: bold;
@@ -121,10 +121,16 @@ button p{color: white;
 
 }
 
-#cercle{ font-size: 1.5em; width: 1em; text-align:justify; line-height: 1.5em;height: 1em;border-radius: 2em; border: 3px solid black; 
-
+#cercle i{ font-size: 0.6em; 
+    text-align:justify; 
+    line-height: 2.5em;
+    border-radius: 2em; 
+    border: 3px solid #F2F2F2; 
     margin-left: 20px;
-
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #0065FC;
+    margin-right: 20px;
 }
 .filtres i{font-size: small;
     margin: 15px;
@@ -145,7 +151,12 @@ h1{
 
 /*partie hebergement*/
 
-h2{margin-left: 30px;}
+
+
+
+h2{margin-left: 30px;
+margin-top: 45px;
+margin-bottom: 25px;}
 
 
 
@@ -155,15 +166,18 @@ h2{margin-left: 30px;}
  
 }   
 
-.conteneur-image{display: flex;}
+.conteneur-image{display: flex;
+}
 
 .sous-conteneur1{
     
     border-radius: 10px 10px 10px 10px;
     background-color:#F2F2F2 ;
-    margin-left: 5px;
-   margin-right: 25px;
+    margin-left: 30px;
+   margin-right: 40px;
    padding-bottom: 25px;
+   width: 880px;
+   height: 625px;
 }
     
 .conteneur-image figcaption {
@@ -193,13 +207,13 @@ h3{
     margin-right: 15px;
     margin-bottom: 55px;
     margin-top: 50px;
-    width: 260px;
-    height: 130px;
+    width: 236px;
+    height: 115px;
     padding-bottom: 5px;
 }
 
- .conteneur-image figure figcaption p i{color: #0065FC;}
-
+    .fa-star{color: #0065FC;}
+    .star-grey{color: gray;}
 .vignette-cannebiere{
     margin-bottom: 50px;
 }
@@ -213,9 +227,10 @@ h3{
 
   
 
-.afficher {margin-left: 25px;
-    margin-top: 25px;
+.afficher {margin-left: 35px;
+    margin-top: 70px;
 font-weight: bold;
+font-size: 20px;
 }
 
 
@@ -232,6 +247,7 @@ font-weight: bold;
 }
 
 /* partie populaire */
+
 
 .sous-conteneur2 h2 i{margin-left: 145px;
     font-size: medium;
@@ -261,6 +277,7 @@ font-weight: bold;
     
     background-color:#F2F2F2 ;
     margin-bottom: 1px;
+    width: 418px;
 }
 
 .conteneur-image2{
@@ -274,7 +291,7 @@ h4{
     z-index  :1;
      background-color: white;
      position:relative;
-     right: 40px;
+     right: 35px;
      
 }
 
@@ -282,9 +299,10 @@ h4{
     border-radius: 10px;
     position : relative;
     z-index  : 0;
+   margin-top: 28px;
     margin-bottom: 40px;
-    width: 350px;
-    height: 130px;
+    width: 336px;
+    height: 133px;
 
 }
 
@@ -307,8 +325,13 @@ justify-content: flex-start;
 img{object-fit: cover;}
 
 
-
+.vignette-populaire{display: flex;}
 /*partie activité a marseille*/
+
+.Activité{margin-top: 60px;
+            margin-left: 25px;
+}
+
 
 h5{ font-size: medium;
 margin-left: 10px;}
@@ -319,9 +342,12 @@ margin-left: 10px;}
     font: italic smaller sans-serif;
     padding: 3px 3px;
     text-align: left;
-    width:145px;
+    
     
 }
+
+
+
 
 .Activité figure {
     border-radius: 10px;
@@ -331,7 +357,7 @@ margin-left: 10px;}
     }
 
 .Activité img{border-radius: 10px;
-border: 1px white;}
+}
  
 
 .Activité figcaption {
@@ -346,32 +372,38 @@ border: 1px white;}
 .Activité .image-activité {display: flex;
     margin-left: -35px;
     margin-top: 30px;
+flex-wrap: wrap;
 }
+
+
     .Activité p{
         margin-left: 5px;
         font-weight: bold;
+        font-size:20px;
     }
 
+h5{
+    font-size: 1.5em;
+}
 
-.vignette-populaire{display: flex;}
 
 .image-activité img{width: 100%;
 height: 100%;
 }
 
-.vignette-port{width: 308px;
-height: 500px;
+.vignette-port{width: 300px;
+height: 450px;
 margin-bottom: 50px;
 margin-top: -12px;
 }
 
-.vignette-Pomègues{width: 308px;
-    height: 290px;
+.vignette-Pomègues{width: 300px;
+    height: 240px;
     margin-top: -12px;
     margin-bottom: 50px;
 }
 
-.vignette-frioul{width: 308px;
+.vignette-frioul{width: 300px;
     height: 200px;
 }
 .vignette-frioul img{height: 75%;
@@ -381,42 +413,60 @@ margin-top: -12px;
 }
 
 
-.vignette-Calanques{width: 308px;
-    height: 500px;
+.vignette-Calanques{width: 300px;
+    height: 450px;
     margin-bottom: 40px;
     margin-top: -12px;
 }
 
-.vignette-Dame{width: 308px;
-    height: 230px;
+.vignette-Dame{width: 300px;
+    height: 200px;
     margin-top: -12px;
     margin-bottom: 40px;
 }
 
-.vignette-Longchamp{width: 308px;
-    height: 230px;
+.vignette-Longchamp{width: 300px;
+    height: 200px;
 }
 
 
 
 
-.image-activité figure{margin-right: 15px;}    
+.image-activité figure{margin-right: 7px;}    
 
-.image-activité figcaption{width: 98%;
+.image-activité figcaption{width: 294px;
+    height: 55px;
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 255, .2);
     border-radius: 0px 0px 10px 10px;
 }
-h6{
-    font-size: medium;
+
+
+/*partie footer */
+
+
+footer{
+    display: flex;  
 }
-footer{display: flex;
-   
+
+
+footer{
+    background-color:#F2F2F2;
+    height: 216px;
+}
+
+footer div{
+    margin-right: 220px ;
+    margin-left: 45px;
+    
     
 }
 
-footer{background-color:#F2F2F2}
+h6{
+    font-size:20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
-footer p {margin-right: 330px ;}
-
-footer div{margin-left:  25px;}
-
+footer p{
+    font-size: 17px;
+}
