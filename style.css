@@ -48,18 +48,23 @@ a:link {text-decoration:none;color: black;
     }
 .loisirs a:hover {
     color:#0065FC;
-    text-decoration: overline;
+    border-top: 2px solid #0065FC ;
 }
 .recherche{ margin-left:  45px;
 }
 
 
+.filtres div p{text-align: center;}
+.filtres{display: flex;
+    align-items: center;
+}
 
 .filtres{margin-top: 25px;
 margin-left: 45px;
 font-weight: bold;
 font-size:20px;
 }
+
 
 
 
@@ -97,6 +102,7 @@ button{background-color:#0065FC ;
 button p{color: white;
     font-weight: bold;
     font-size: large;
+    margin-top: 15px;
 }
 
 
@@ -104,20 +110,24 @@ button p{color: white;
     border-left-style: none;
     border-radius: 0em 5em 5em 0em;
     margin: 5px 5px 5px 5px;
-    padding: 5px 15px 5px 15px;
-    margin-left: -5px;
+    padding: 9px 35px 9px 35px;
+    margin-left: -24px;
     z-index: 1;
     position:relative;
 }
- 
-.filtres{display: flex;
-    align-items: center;
-}
+
         
 
-.filtres #moncercle { font-size: 1.5em; width: 1.7em; text-align: center; line-height: 1.5em;height: 1.7em; background:#DEEBFF ; color:#0065FC; border-radius: 2em;  
-
+.filtres #moncercle { font-size: 1.5em; 
+    width: 1.5em; 
+    text-align: center; 
+    line-height: 1.2em;
+    height: 1.5em; 
+    background:#DEEBFF ; 
+    color:#0065FC; 
+    border-radius: 2em;  
     margin-left: 20px;
+    
 
 }
 
@@ -131,22 +141,34 @@ button p{color: white;
     padding-right: 10px;
     color: #0065FC;
     margin-right: 20px;
+
 }
 .filtres i{font-size: small;
     margin: 15px;
 
 } 
-
+.filtres a:hover {
+    color:blue;
+    text-decoration:none;
+    background-color:  rgba(0, 0, 255, 0.493);
+    
+    }
 .cercle i{ font-size: smaller; margin: 15px 15px 15px 15px;
    
 }
 
 .filtres p{margin-left: 5px;
+    color: black;
 }
 
+.text p{
+    margin-left: 5px;
+    margin-bottom:15px ;
+}
 
 h1{
     margin-left: 5px;
+    margin-bottom: -5px;
 }
 
 /*partie hebergement*/
@@ -169,7 +191,7 @@ margin-bottom: 25px;}
 .conteneur-image{display: flex;
 }
 
-.sous-conteneur1{
+.hebergements{
     
     border-radius: 10px 10px 10px 10px;
     background-color:#F2F2F2 ;
@@ -177,7 +199,7 @@ margin-bottom: 25px;}
    margin-right: 40px;
    padding-bottom: 25px;
    width: 880px;
-   height: 625px;
+   
 }
     
 .conteneur-image figcaption {
@@ -217,7 +239,7 @@ h3{
 .vignette-cannebiere{
     margin-bottom: 50px;
 }
-.sous-conteneur1 img{border: 3px solid white;
+.hebergements img{border: 3px solid white;
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0px 0px;
@@ -249,11 +271,11 @@ font-size: 20px;
 /* partie populaire */
 
 
-.sous-conteneur2 h2 i{margin-left: 145px;
+.populaires h2 i{margin-left: 145px;
     font-size: medium;
 }
 
-.conteneur1 .sous-conteneur2 figcaption{
+.conteneur1 .populaires figcaption{
     background-color:white;
     color:black;
     padding: 2px;
@@ -265,14 +287,14 @@ font-size: 20px;
     margin-bottom: -7px;
     }
 
-.sous-conteneur2 img{border: 4px solid white;
+.populaires img{border: 4px solid white;
     
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0 0;
     margin-left:  -2%;
 }
-.sous-conteneur2{
+.populaires{
     border-radius: 10px 10px 10px 10px;
     
     background-color:#F2F2F2 ;
@@ -287,7 +309,7 @@ h4{
     margin-bottom: 10px;
     margin-left: 5px;
 }
-.sous-conteneur2 figcaption {
+.populaires figcaption {
     z-index  :1;
      background-color: white;
      position:relative;
@@ -295,7 +317,7 @@ h4{
      
 }
 
-.sous-conteneur2 figure {
+.populaires figure {
     border-radius: 10px;
     position : relative;
     z-index  : 0;
@@ -306,26 +328,29 @@ h4{
 
 }
 
-.sous-conteneur2 figcaption p{ 
+.populaires figcaption p{ 
     margin-left: 5px;
 }
 
 
 .conteneur1 {display: flex;
     margin-top: 20px;
+    flex-wrap: wrap-reverse;
 }
 
 
 
 
-.sous-conteneur2{display: flex;
+.populaires{display: flex;
 justify-content: flex-start;
+
 }
 
 img{object-fit: cover;}
 
 
 .vignette-populaire{display: flex;}
+
 /*partie activité a marseille*/
 
 .Activité{margin-top: 60px;
@@ -422,7 +447,7 @@ margin-top: -12px;
 .vignette-Dame{width: 300px;
     height: 200px;
     margin-top: -12px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .vignette-Longchamp{width: 300px;
@@ -446,12 +471,13 @@ margin-top: -12px;
 
 footer{
     display: flex;  
+    flex-wrap: wrap;
 }
 
 
 footer{
     background-color:#F2F2F2;
-    height: 216px;
+    
 }
 
 footer div{
