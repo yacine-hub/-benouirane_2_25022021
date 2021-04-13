@@ -6,13 +6,13 @@
     margin-left: 45px;
 }
 main{
-       margin-left: 20px;
+      
        width: 100%;
    }
 .texte{
     margin-top:-20px
 }
-body{font-family: raleway;
+body{font-family:raleway;
 }
 header {
     display: flex;
@@ -37,10 +37,18 @@ nav>ul>li>a {
     
     padding: 20px;
 }
+.inscription{
+   color:#0065FC ;
+}
 li {
     list-style: none;
 }
-a:link {text-decoration:none;color: black;  
+a:visited {text-decoration:none;color: black;  
+}
+
+a{
+    text-decoration: none;
+   margin-right: -20px;
 }
 .logements a:hover {
     color:#0065FC;
@@ -54,8 +62,12 @@ a:link {text-decoration:none;color: black;
 .recherche{ margin-left:  45px;
 }
 
+input{x; font-weight: bold; color: black;
 
-.filtres div p{text-align: center;}
+}
+
+.filtres div p{text-align: center;
+}
 .filtres{display: flex;
     align-items: center;
 }
@@ -66,6 +78,10 @@ font-weight: bold;
 font-size:20px;
 }
 
+.animaux{min-width:200px ;
+   
+   
+}
 
 
 
@@ -207,10 +223,10 @@ margin-bottom: 25px;}
     z-index  :1;
      background-color: white;
      position:relative;
-     top: -53px;
-     left: 14px;
-     margin-left: -1ex ;
-     margin-right: 3px;
+     top: -55px;
+     left: 16px;
+     margin-left: -12px ;
+     margin-right: 5px;
      background-color:white;
     color:black;
     text-align:left;
@@ -246,6 +262,7 @@ h3{
     border-radius: 10px 10px 0px 0px;
     margin-left:  2%;
     margin-bottom: 30px;
+    
 }
 
  .conteneur-image i{margin-bottom: 10px ;} 
@@ -302,7 +319,9 @@ font-size: 20px;
     margin-bottom: 1px;
     width: 418px;
 }
+.images-populaires{ margin-top: -20px;
 
+}
 .conteneur-image2{
     margin-top: 15px;
 }
@@ -332,28 +351,28 @@ h4{margin-top: 10px;
 margin-left: 15px;
 }
 .populaires i{
-    margin-top: 30px;
+    margin-top: 15px;
     
 }
 .populaires figcaption p{ 
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
   
 }
 
 
+.populaires{display: flex;
+    justify-content: flex-start;
+
+}
 .conteneur1 {display: flex;
     margin-top: 20px;
-    flex-wrap: wrap-reverse;
+    
 }
 
 
 
 
-.populaires{display: flex;
-justify-content: flex-start;
-
-}
 
 img{object-fit: cover;}
 
@@ -374,7 +393,6 @@ margin-left: 10px;}
 .Activité figcaption {
     background-color:white;
     color:black;
-    font: italic smaller sans-serif;
     padding: 3px 3px;
     text-align: left;
     
@@ -407,7 +425,8 @@ margin-left: 10px;}
 .Activité .image-activité {display: flex;
     margin-left: -35px;
     margin-top: 30px;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -509,47 +528,103 @@ footer p{
 
 /*partie media queris */
 
-@media only screen and (max-width: 1384px){
-    .hebergements{width:100%;}
+@media only screen and (max-width: 1024px){
     
-    .populaires{width:100%;
-        margin-left: 30px ;
-        margin-right: 40px;
+ footer div{
+     margin-left:20px;
+    
+ } 
+ 
+ .conteneur1{flex-wrap: wrap-reverse;
+
+ }
+
+.populaires{width:880px;
+    margin-left:  30px;
+    margin-right: 40px;
+    
+
 }
-    .images-populaires {width:50%;
-      
+.images-populaires{margin-left: 25%;
+    margin-right: 25%;
+
+}
+.filtres{flex-wrap: wrap;
+}
+
+.filtres{
+    margin-left:5px;
+}
+ 
+.recherche{margin-left: 5px;
+}
+
+
+
+ 
+
+}  
+   
+@media only screen and (max-width: 778px){        
+
+.logo{margin-left: 0px;
+}
+
+.information{margin-left: 0px;}
+.hebergements{background-color:white;
+    margin-left: 0px;
+}
+.hebergements figure figcaption{ box-shadow:1px 2px 5px 5px rgba(194, 194, 209, 0.2);
+
+}
+
+.hebergements figure img{
+    box-shadow:1px 0px 5px 5px rgba(194, 194, 209, 0.2);
+}
+header{
+    flex-wrap: wrap;
+   
+}
+
+
+
+.populaires{
+border-radius: 0px;
+margin: 0px;
+}
+.populaires figure{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 320PX;  
+}
+.images-populaires{margin-left: 0%;
+    margin-right: 25%;
+
+}
+
+h2{font-size: 18px;
+margin-left: 15px;
+}
+
+footer{margin-top: 20px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 597px){
+
+    .hebergements figure{width: 300px;
     }
-    .populaires figure{width: 80%;}
 
-    .populaires {display: flex;
-       justify-content: center; 
+}
+ 
 
-    }    
 
-    .hebergements .conteneur-image{display: flex;
-        justify-content: center;
-        
-  }
-        
-  .Activité{
-      
-      width: 100%;
-      padding: 40px;
-      padding: 50px;
-  }
 
-  .image-activité{
-      width: 100%;
-      margin-right: 25px;
-  } 
-  .image-activité figure{
-      width: 80%;
-  }
-  .image-activité figcaption{
-      width: 97%;
-  }
-    
-} 
+
+
    
 
 
