@@ -34,9 +34,10 @@ nav ul li a{padding: 20px;
 }
 li {list-style: none;
 }
-a:visited {text-decoration:none;color: black;  
+a{text-decoration:none;
+    color: black;  
 }
-a{text-decoration: none;
+.conteneur-filtres a{text-decoration: none;
    margin-right: -20px;
 }
 .logements a:hover {
@@ -56,6 +57,10 @@ input::placeholder{color: black;
     font-weight: bold;
     font-size: large;
     padding-left: 15px;
+    font-family:raleway;
+}
+.filtres h1{font-size: 20px;
+
 }
 .filtres div p{text-align: center;
 }
@@ -90,7 +95,7 @@ div .info i{margin: 10px 10px 10px 10px;
 }
 input{border: 1px  solid#F2F2F2;
     height: 50px;
-    width: 200px;
+    width: 250px;
 }
 button{background-color:#0065FC ;
     border-radius: 0em 15px 15px 0em;
@@ -100,7 +105,8 @@ button{background-color:#0065FC ;
 button p{color: white;
     font-weight: bold;
     font-size: large;
-    margin-top: 15px;
+    font-family:raleway;
+    margin-top: 12px;
 }
 button .fa-search{display: none;
 }
@@ -124,16 +130,16 @@ button .fa-search{display: none;
 }
 .icon{ position:absolute;
     left:0;
-    line-height: 74px;
+    line-height: 72px;
 }
 .btn-filtre{position: relative;
     margin-left: 25px;
 }       
 .filtres i { font-size: 1.5em; 
-    width: 57px; 
+    width: 60px; 
     text-align: center; 
-    line-height: 56px;
-    height: 57px; 
+    line-height: 58px;
+    height: 60px; 
     background:#DEEBFF ; 
     color:#0065FC; 
     border-radius: 2em;  
@@ -297,6 +303,7 @@ h4{margin-bottom: 10px;
     margin-bottom: 40px;
     width: 336px;
     height: 133px;
+    display: flex;
 }
 h4{margin-top: 10px;
     margin-left: 15px;
@@ -316,7 +323,7 @@ h4{margin-top: 10px;
 }
 img{object-fit: cover;
 }
-.vignette-populaire{display: flex;}
+
 
 /*partie activité a marseille*/
 
@@ -446,7 +453,7 @@ footer p{
     }
     .recherche{margin-left: 5px;
     }
-    .input{width: none;
+    .input{
     padding-right: 15px;
     }
 }  
@@ -474,9 +481,8 @@ footer p{
     .populaires{border-radius: 0px;
         margin: 0px;
     }
-    .populaires figure{
+    .populaires figure {
         margin-left: 15px;
-        margin-right: 15px;
         width: 320PX;  
     }
     .images-populaires{margin-left: 0%;
@@ -497,7 +503,14 @@ footer p{
 
 
 @media only screen and (max-width: 597px){
-
+    .logements a{border-bottom: 3.5px solid #0065FC;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .loisirs a{border-bottom: 3.5px solid #F2F2F2;
+        padding-left: 52px;
+        padding-right: 52px;
+    }
     .hebergements figure {
         width: 330px;
         margin-left: 3px;
@@ -538,6 +551,9 @@ footer p{
     }   
     .vignette-Dame{margin-bottom: -25px;
     }
+    .vignette-Longchamp{
+        width: 330px;
+    }
     .Activité{margin-top: -30px;
     }
     h5{margin-left:0px;
@@ -546,14 +562,15 @@ footer p{
         display: flex;
         margin-bottom: 30px;
         margin-top:-75px;
-        margin-left:-45px;
+        margin-left:-95px;
     }
     header nav{
         margin-left: 0px;
     }
     header .logements {
-        margin-right: 80px;
+        
         margin-left: -40px;
+
     }
     .logements a:hover {
         color:#0065FC;
@@ -592,11 +609,11 @@ footer p{
     }
     .animaux .themes{width: 175px;
     }    
-    .icon{ line-height: 64px;
+    .icon{ line-height: 63px;
     }
-    .filtres i { width: 44px;  
-        line-height: 45px;
-        height: 44px; 
+    .filtres i { width: 46px;  
+        line-height: 46px;
+        height: 46px; 
     }
     .billet{margin-left:5px;
     }
@@ -611,6 +628,7 @@ footer p{
     .information div{
         margin-bottom: 15px;
     }
+   
 }
 
 
