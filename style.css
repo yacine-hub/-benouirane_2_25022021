@@ -3,7 +3,7 @@
     src: url(police/Raleway2.ttf) format("truetype");   
 }
 .logo{
-    margin-left: 45px;
+    margin-left: 25px;
 }
 main{width: 100%;
 }
@@ -11,6 +11,8 @@ main{width: 100%;
     margin-top:-20px
 }
 body{font-family:raleway;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 header {
     display: flex;
@@ -52,7 +54,7 @@ a{text-decoration:none;
     color: #0065FC;
     font-weight: bold;
 }
-.recherche{ margin-left:  45px;
+.recherche{ margin-left:  25px;
 }
 input::placeholder{color: black;
     font-weight: bold;
@@ -70,7 +72,7 @@ input::placeholder{color: black;
     flex-wrap: wrap;
 }
 .filtres{margin-top: 25px;
-    margin-left: 45px;
+    margin-left: 25px;
     font-weight: bold;
     font-size:17px;
     display: flex;
@@ -483,14 +485,14 @@ footer p{
         margin: 0px;
     }
     .populaires figure {
-        margin-left: 15px;
+        
         width: 320PX;  
     }
     .images-populaires{margin-left: 0%;
         margin-right: 25%;
     }
     h2{font-size: 18px;
-        margin-left: 15px;
+        
     }
 
     footer{margin-top: 20px;
@@ -514,14 +516,12 @@ footer p{
     }
     .hebergements figure {
         width: 330px;
-        margin-left: 3px;
+       
     }
-    .afficher{margin-left:0px;
-        }
+    
     .image-activité figcaption{width:unset;
     }
-    .Activité{margin-left: 0px;
-    }
+    
     .vignette-port{width: 330px;
         height: 200px;
         margin-bottom:5px;
@@ -631,10 +631,15 @@ footer p{
     .information div{
         margin-bottom: 15px;
     }
+   footer div{margin-right: 150px;} 
    
 }
 
+@media only screen and (max-width: 356px){
+    footer{margin-right:-70px;
 
+    }
+}
 
 
    
