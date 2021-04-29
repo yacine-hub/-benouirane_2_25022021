@@ -50,6 +50,7 @@ a{text-decoration:none;
 }
 .inscription a{
     color: #0065FC;
+    font-weight: bold;
 }
 .recherche{ margin-left:  45px;
 }
@@ -102,13 +103,13 @@ button{background-color:#0065FC ;
     border: none;
     width: 135px;
 }
-button p{color: white;
+.btn-recherche{color: white;
     font-weight: bold;
     font-size: large;
     font-family:raleway;
-    margin-top: 12px;
+    
 }
-button .fa-search{display: none;
+.btn-loupe{display: none;
 }
 .filtres .themes{border: 3px solid #f2f2f2e7 ;
     border-left-style: none;
@@ -583,11 +584,13 @@ footer p{
         border-top: none;
         border-bottom: 2px solid #0065FC ;
     }
-    button .fa-search{display:initial;
-        color:white;
+    .btn-loupe {display:initial;
+    }
+    .fa-search{    
+    color:white;
         font-size: large;
     }
-    button p{display: none;
+    .btn-recherche{display: none;
     }
     button{background-color:#0065FC ;
         border-radius: 15px;
